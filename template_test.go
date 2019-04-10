@@ -16,7 +16,7 @@ package beego
 
 import (
 	"bytes"
-	"github.com/astaxie/beego/testdata"
+	"github.com/yuncodeclass/beego/testdata"
 	"github.com/elazarl/go-bindata-assetfs"
 	"net/http"
 	"os"
