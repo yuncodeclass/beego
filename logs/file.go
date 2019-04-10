@@ -149,6 +149,7 @@ func (w *fileLogWriter) WriteMsg(when time.Time, msg string, level int) error {
 		return nil
 	}
 	hd, d, h := formatTimeHeader(when)
+	hd = []byte(when.Format("2006-01-02 15:04:05") + " ")
 	msg = string(hd) + msg + "\n"
 	if w.Rotate {
 		w.RLock()
